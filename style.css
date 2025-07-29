@@ -1,32 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 *{
     padding: 0;
     margin: 0;
-}   
+}
 
-body { 
-    font-family: "Poppins", sans-serif; 
-    margin: 0;
+body{
+    padding-top: 70px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .navbar{
-    background: rgba(0, 0, 0, 0.8);
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 15px 0;
 }
 
 .navbar-brand{
-    font-size: 29px;
-    font-weight: 700;
-    color: #fff;
+    font-size: 29px !important;
+    font-weight: 700 !important;
+    color: #1a76d1 !important;
+    transition: color 0.3s ease !important;
+}
+
+.navbar-brand:hover{
+    color: #f28c38 !important;
 }
 
 .nav-link{
-    color: #fff;
-    padding: 10px 15px;
-    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    margin: 0 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-link:hover{
-    color: #E96308;
+    color: #1a76d1;
+    transform: scale(1.1);
+}
+
+@media (max-width:768px){
+    .navbar-brand{
+        font-size: 24px;
+    }
+    .nav-link{
+        margin: 10px 0;
+        font-size: 24px;
+    }
+}
+
+.nav-link.active{
+    color: #1a76d1;
+    font-weight: 700;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.dropdown-menu{
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.dropdown-item{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #333;
+    padding: 10px 20px;
+
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-item:hover{
+    background-color: #1a76d1;
+    color: #fff;
+    transform: scale(1.05);
+}
+.active{
+    color: #1a76d1 !important;
+    font-weight: 700 !important;
 }
