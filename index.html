@@ -13,19 +13,24 @@
       rel="stylesheet"
     />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <header>
       <!-- navbar -->
-      <nav
-        class="navbar navbar-expand-lg fixed-top animate__animated animate__fadeInDown"
-      >
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-          <a href="#" class="navbar-brand">CyberCrest</a>
+          <a class="navbar-brand" href="#">CyberCrest</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -40,298 +45,862 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a href="index.html" class="nav-link active">Home</a>
+                <a class="nav-link active" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a href="#about" class="nav-link">About</a>
-              </li>
-              <li class="nav-item">
-                <a href="#services" class="nav-link">Services</a>
-              </li>
-              <li class="nav-item">
-                <a href="#portfolio" class="nav-link">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a href="#team" class="nav-link">Team</a>
+                <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item dropdown">
                 <a
-                  href="#"
                   class="nav-link dropdown-toggle"
-                  id="solutionsDropdown"
+                  href="#services"
+                  id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Solutions
+                  Services <i class="bi bi-chevron-down ms-1"></i>
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="solutionsDropdown">
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a href="#enterprise" class="dropdown-item"
-                      >Enterise Software</a
+                    <a class="dropdown-item" href="web_design.html"
+                      >Web Design</a
                     >
                   </li>
                   <li>
-                    <a href="#devtools" class="dropdown-item"
-                      >Development Tools</a
+                    <a class="dropdown-item" href="web_development.html"
+                      >Web Development</a
                     >
                   </li>
                   <li>
-                    <a href="#creativesuite" class="dropdown-item"
-                      >Creative Suite</a
+                    <a class="dropdown-item" href="product_management.html"
+                      >Product Management</a
                     >
                   </li>
                   <li>
-                    <a href="#resources" class="dropdown-item">Resources</a>
+                    <a class="dropdown-item" href="marketing.html">Marketing</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="graphic_design.html"
+                      >Graphic Design</a
+                    >
                   </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="team.html">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <!-- Hero -->
-      <section id="hero">
+    </header>
+    <main>
+      <section id="hero" class="hero">
         <div class="container">
-          <h1 class="animate__animated animate__fadeInDown">
-            Comprehensive Digital Solutions for Your Business
-          </h1>
-          <p class="animate__animated animate__fadeInUp animate__delay-1s">
-            From web and mobile apps to cloud and security, we deliver
-            excellence 24/7.
-          </p>
-          <a
-            href="#content"
-            class="hero-btn btn-primary animate__animated animate__fadeInUp animate__delay-s"
-            >Get Strated</a
-          >
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+              <h1>Welcome to CyberCrest</h1>
+              <p class="lead">
+                We are a team of talented designers making websites with
+                Bootstrap
+              </p>
+              <a href="#about" class="btn btn-primary mt-4">Get Started</a>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- About -->
-      <section id="about" class="py-5">
+      <section id="about" class="about">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-md-6">
-              <h2 class="animate__animated animate__fadeInLeft">
-                About CyberCrest
-              </h2>
-              <h3
-                class="animate__animated animate__fadeInLeft animate__delay-1s"
-              >
-                Empowering Your Digital Success
-              </h3>
-              <p
-                class="animate__animated animate__fadeInLeft animate__delay-2s"
-              >
-                At CyberCrest, we specialize in delivering digital solutions,
-                including web development, UI/UX design, Our passionate team is
-                dedicated to transforming your ideas into powerful,
-                user-friendly experiences that drive business growth.
+            <div class="col-lg-6">
+              <h2>About Us</h2>
+              <p class="lead">
+                We are a team of creative professionals dedicated to crafting
+                stunning websites and digital solutions using Bootstrap and
+                modern technologies. With years of experience, we deliver
+                high-quality designs tailored to your needs.
               </p>
-              <p
-                class="animate__animated animate__fadeInLeft animate__delay-3s"
-              >
-                With a focus on quality and creativity, we craft tailored
-                solutions that meet your unique needs. Our expertise ensures
-                your projects are delivered on time, with exceptional
-                performance and reliability.
+              <p>
+                Our mission is to empower businesses with innovative and
+                user-friendly websites that stand out in the digital world.
+                Let’s build something amazing together!
               </p>
-              <a
-                href="#contact"
-                class="about-btn btn-primary animate__animated animate__fadeInUp animate__delay-4s"
-                >Learn More</a
-              >
             </div>
-            <div class="col-md-6">
-              <img
-                src="/about-4.jpg"
-                alt="About Us"
-                class="img-fluid animate__animated animate__fadeInRight"
-              />
-            </div>
-            <div class="row mt-5 text-container">
-              <div class="col-md-3 mb-3">
-                <div
-                  class="stat-box animate__animated animate__fadeInUp animate__delay-5s"
-                >
-                  <i class="fas fa-clock fa-2x text-primary"></i>
-                  <h4>10+ Years</h4>
-                  <p>Experience</p>
-                </div>
-              </div>
-              <div class="col-md-3 mb-3">
-                <div
-                  class="stat-box animate__animated animate__fadeInUp animate__delay-5s"
-                >
-                  <i class="fas fa-project-diagram fa-2x text-primary"></i>
-                  <h4>200+ Projects</h4>
-                  <p>Completed</p>
-                </div>
-              </div>
-              <div class="col-md-3 mb-3">
-                <div
-                  class="stat-box animate__animated animate__fadeInUp animate__delay-5s"
-                >
-                  <i class="fas fa-users fa-2x text-primary"></i>
-                  <h4>50+ Clients</h4>
-                  <p>Satisfied</p>
-                </div>
-              </div>
-              <div class="col-md-3 mb-3">
-                <div
-                  class="stat-box animate__animated animate__fadeInUp animate__delay-5s"
-                >
-                  <i class="fas fa-headset fa-2x text-primary"></i>
-                  <h4>24/7</h4>
-                  <p>Support</p>
-                </div>
+            <div class="col-lg-6">
+              <div class="about-image">
+                <img src="/about-4.jpg" alt="About Us" class="img-fluid" />
               </div>
             </div>
           </div>
         </div>
       </section>
       <!-- Services -->
-      <section id="services" class="py-5">
+      <section id="services" class="services">
         <div class="container">
-          <div class="text-center mb-5">
-            <h2 class="animate__animated animate__fadeInDown">Our Services</h2>
-            <p class="animate__animated animate__fadeInDown animate__delay-1s">
-              Explore our expert solutions to elevate your business.
+          <div class="section-title text-center">
+            <h2>Our Services</h2>
+            <p class="lead">
+              We provide a wide range of services to help your business thrive
+              online.
             </p>
-            <div class="row">
-              <div class="col-md-4 col-sm-6 mb-4">
-                <div
-                  class="service-card text-center animate__animated animate__fadeInUp animate__delay-1s"
-                >
-                  <div class="icon-box">
-                    <i class="fas fa-code fa-3x"></i>
-                  </div>
-                  <h4>Web Development</h4>
-                  <p>
-                    Building responsive, high-performance websites tailored to
-                    your business needs.
-                  </p>
-                  <a href="#contact" class="service-link">Discover More</a>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item">
+                <i class="bi bi-brush"></i>
+                <h3>Web Design</h3>
+                <p>
+                  Creating stunning and responsive website designs tailored to
+                  your brand.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item">
+                <i class="bi bi-code-slash"></i>
+                <h3>Web Development</h3>
+                <p>
+                  Building robust and scalable websites with the latest
+                  technologies.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item">
+                <i class="bi bi-bar-chart"></i>
+                <h3>Digital Marketing</h3>
+                <p>
+                  Boosting your online presence with effective marketing
+                  strategies.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item">
+                <i class="bi bi-palette"></i>
+                <h3>Graphic Design</h3>
+                <p>
+                  Delivering creative and professional visual designs for your
+                  brand identity.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item">
+                <i class="bi bi-search"></i>
+                <h3>SEO</h3>
+                <p>
+                  Optimizing your website to rank higher on search engines and
+                  attract traffic.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item">
+                <i class="bi bi-phone"></i>
+                <h3>Mobile App Development</h3>
+                <p>
+                  Developing innovative and user-friendly mobile applications
+                  for all platforms.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <div class="container">
+          <div class="section-title text-center">
+            <h2>Our Features</h2>
+            <p class="lead">
+              Discover the key features that make Devin stand out.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="feature-item">
+                <i class="bi bi-check-circle"></i>
+                <h3>Responsive Design</h3>
+                <p>
+                  Ensure your website looks great on all devices with our
+                  responsive designs.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="feature-item">
+                <i class="bi bi-speedometer2"></i>
+                <h3>Fast Performance</h3>
+                <p>
+                  Optimized for speed to provide a seamless user experience.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="feature-item">
+                <i class="bi bi-shield-lock"></i>
+                <h3>Secure Hosting</h3>
+                <p>
+                  Protect your site with our top-tier security and hosting
+                  solutions.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="feature-item">
+                <i class="bi bi-headset"></i>
+                <h3>24/7 Support</h3>
+                <p>
+                  Get round-the-clock assistance from our dedicated support
+                  team.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="feature-item">
+                <i class="bi bi-gear"></i>
+                <h3>Custom Solutions</h3>
+                <p>
+                  Tailored solutions to meet your unique business requirements.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="feature-item">
+                <i class="bi bi-graph-up"></i>
+                <h3>Analytics & Insights</h3>
+                <p>Gain valuable insights with our advanced analytics tools.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio" class="portfolio">
+        <div class="container">
+          <div class="section-title text-center">
+            <h2>Our Portfolio</h2>
+            <p class="lead">Explore some of our best projects and designs.</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="portfolio-item">
+                <img src="/web-de.jpg" alt="Project 1" class="img-fluid" />
+                <div class="portfolio-overlay">
+                  <h4>Project One</h4>
+                  <p>Web Design</p>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-6 mb-4">
-                <div
-                  class="service-card text-center animate__animated animate__fadeInUp animate__delay-1s"
-                >
-                  <div class="icon-box">
-                    <i class="fas fa-paint-brush fa-3x"></i>
-                  </div>
-                  <h4>UI/UX Design</h4>
-                  <p>
-                    Crafting user-friendly, visually appealing interfaces for
-                    seamless experiences.
-                  </p>
-                  <a href="#contact" class="service-link">Discover More</a>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="portfolio-item">
+                <img src="/web-lop.jpg" alt="Project 2" class="img-fluid" />
+                <div class="portfolio-overlay">
+                  <h4>Project Two</h4>
+                  <p>Web Development</p>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-6 mb-4">
-                <div
-                  class="service-card text-center animate__animated animate__fadeInUp animate__delay-2s"
-                >
-                  <div class="icon-box">
-                    <i class="fas fa-bullhorn fa-3x"></i>
-                  </div>
-                  <h4>Digital Marketing</h4>
-                  <p>
-                    Boosting your online presence with SEO, ads, and social
-                    media strategies.
-                  </p>
-                  <a href="#contact" class="service-link">Discover More</a>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="portfolio-item">
+                <img src="/di-ma.jpg" alt="Project 3" class="img-fluid" />
+                <div class="portfolio-overlay">
+                  <h4>Project Three</h4>
+                  <p>Digital Marketing</p>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-6 mb-4">
-                <div
-                  class="service-card text-center animate__animated animate__fadeInUp animate__delay-2s"
-                >
-                  <div class="icon-box">
-                    <i class="fas fa-shield-alt fa-3x"></i>
-                  </div>
-                  <h4>Security Solutions</h4>
-                  <p>
-                    Ensuring robust cybersecurity to protect your digital
-                    assets.
-                  </p>
-                  <a href="#contact" class="service-link">Discover More</a>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="portfolio-item">
+                <img src="/graphic.jpg" alt="Project 4" class="img-fluid" />
+                <div class="portfolio-overlay">
+                  <h4>Project Four</h4>
+                  <p>Graphic Design</p>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-6 mb-4">
-                <div
-                  class="service-card text-center animate__animated animate__fadeInUp animate__delay-3s"
-                >
-                  <div class="icon-box">
-                    <i class="fas fa-cloud fa-3x"></i>
-                  </div>
-                  <h4>Cloud Services</h4>
-                  <p>
-                    Providing scalable, secure cloud infrastructure for your
-                    business.
-                  </p>
-                  <a href="#contact" class="service-link">Discover More</a>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="portfolio-item">
+                <img src="/search.jpg" alt="Project 5" class="img-fluid" />
+                <div class="portfolio-overlay">
+                  <h4>Project Five</h4>
+                  <p>SEO</p>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-6 mb-4">
-                <div
-                  class="service-card text-center animate__animated animate__fadeInUp animate__delay-3s"
-                >
-                  <div class="icon-box">
-                    <i class="fas fa-palette fa-3x"></i>
-                  </div>
-                  <h4>Creative Design</h4>
-                  <p>
-                    Creating innovative graphic and branding designs that stand
-                    out.
-                  </p>
-                  <a href="#contact" class="service-link">Discover More</a>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 mb-4">
-                <div
-                  class="service-card text-center animate__animated animate__fadeInUp animate__delay-4s"
-                >
-                  <div class="icon-box">
-                    <i class="fas fa-chess fa-3x"></i>
-                  </div>
-                  <h4>Business Strategy</h4>
-                  <p>
-                    Developing data-driven strategies to drive business growth.
-                  </p>
-                  <a href="#contact" class="service-link">Discover More</a>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 mb-4">
-                <div
-                  class="service-card text-center animate__animated animate__fadeInUp animate__delay-4s"
-                >
-                  <div class="icon-box">
-                    <i class="fas fa-headset fa-3x"></i>
-                  </div>
-                  <h4>24/7 Support</h4>
-                  <p>
-                    Offering round-the-clock technical support for your peace of
-                    mind.
-                  </p>
-                  <a href="#contact" class="service-link">Discover More</a>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="portfolio-item">
+                <img src="/mobileap.png" alt="Project 6" class="img-fluid" />
+                <div class="portfolio-overlay">
+                  <h4>Project Six</h4>
+                  <p>Mobile App</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- Portfolio -->
-      <!-- about -->
-      <!-- Contact -->
-    </header>
-    <main></main>
-    <footer></footer>
+
+      <section id="how-we-work" class="how-we-work">
+        <div class="container">
+          <div class="section-title text-center">
+            <h2>How We Work</h2>
+            <p class="lead">
+              Discover our streamlined process to deliver exceptional results.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="work-process">
+                <div class="process-step">
+                  <i class="bi bi-lightbulb"></i>
+                  <h3>Idea & Planning</h3>
+                  <p>
+                    We start by understanding your vision and creating a
+                    detailed plan.
+                  </p>
+                </div>
+                <div class="process-step">
+                  <i class="bi bi-brush"></i>
+                  <h3>Design</h3>
+                  <p>
+                    Our designers craft stunning visuals tailored to your brand.
+                  </p>
+                </div>
+                <div class="process-step">
+                  <i class="bi bi-code-slash"></i>
+                  <h3>Development</h3>
+                  <p>
+                    We build robust and scalable solutions with cutting-edge
+                    technology.
+                  </p>
+                </div>
+                <div class="process-step">
+                  <i class="bi bi-check-circle"></i>
+                  <h3>Testing & Launch</h3>
+                  <p>
+                    Rigorous testing ensures quality before launching your
+                    project.
+                  </p>
+                </div>
+                <div class="process-step">
+                  <i class="bi bi-headset"></i>
+                  <h3>Support</h3>
+                  <p>
+                    Continuous support to keep your project running smoothly.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews" class="reviews">
+        <div class="container">
+          <div class="section-title text-center">
+            <h2>What Our Clients Say</h2>
+            <p class="lead">
+              Hear from our satisfied clients about their experience with us.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="review-item">
+                <p class="review-text">
+                  "Amazing work! The website they built for us exceeded our
+                  expectations."
+                </p>
+                <h4>John Doe</h4>
+                <p class="review-role">CEO, Tech Solutions</p>
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="review-item">
+                <p class="review-text">
+                  "Professional team with great design skills. Highly
+                  recommend!"
+                </p>
+                <h4>Jane Smith</h4>
+                <p class="review-role">Marketing Manager, Creative Hub</p>
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="review-item">
+                <p class="review-text">
+                  "Fast delivery and excellent support. A pleasure to work
+                  with."
+                </p>
+                <h4>Mike Johnson</h4>
+                <p class="review-role">Founder, Innovate Inc.</p>
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="pricing" class="pricing">
+        <div class="container">
+          <div class="section-title text-center">
+            <h2>Pricing Plans</h2>
+            <p class="lead">
+              Choose the plan that best suits your needs and budget.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="pricing-item">
+                <h3>Basic</h3>
+                <h4><sup>$</sup>19<span>/month</span></h4>
+                <ul>
+                  <li>1 Website</li>
+                  <li>10 GB Storage</li>
+                  <li>Basic Support</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="pricing-item popular">
+                <h3>Standard</h3>
+                <h4><sup>$</sup>49<span>/month</span></h4>
+                <ul>
+                  <li>5 Websites</li>
+                  <li>50 GB Storage</li>
+                  <li>24/7 Support</li>
+                  <li>SEO Tools</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="pricing-item">
+                <h3>Premium</h3>
+                <h4><sup>$</sup>99<span>/month</span></h4>
+                <ul>
+                  <li>Unlimited Websites</li>
+                  <li>200 GB Storage</li>
+                  <li>24/7 Support</li>
+                  <li>SEO & Analytics</li>
+                  <li>Custom Features</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="faq" class="faq">
+        <div class="container">
+          <div class="section-title">
+            <h2>Frequently Asked Questions</h2>
+          </div>
+          <div class="faq-list">
+            <ul>
+              <li>
+                <a data-bs-toggle="collapse" class="collapsed" href="#faq1"
+                  >What types of websites do you develop?
+                  <i class="bi bi-chevron-down icon-show"></i
+                  ><i class="bi bi-chevron-up icon-close"></i
+                ></a>
+                <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    We build all kinds of websites — including business
+                    websites, e-commerce platforms, portfolios, blogs, and
+                    custom web applications — tailored to meet your goals and
+                    audience needs.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <a data-bs-toggle="collapse" href="#faq2" class="collapsed"
+                  >How do you ensure good UI/UX design?
+                  <i class="bi bi-chevron-down icon-show"></i
+                  ><i class="bi bi-chevron-up icon-close"></i
+                ></a>
+                <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    We follow a user-centered design approach. Our team
+                    researches user behavior, creates wireframes, and designs
+                    intuitive interfaces that are visually appealing and easy to
+                    navigate.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <a data-bs-toggle="collapse" href="#faq3" class="collapsed"
+                  >Is my data safe with your cloud solutions?
+                  <i class="bi bi-chevron-down icon-show"></i
+                  ><i class="bi bi-chevron-up icon-close"></i
+                ></a>
+                <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Yes, absolutely. We use trusted cloud platforms with strong
+                    encryption, regular backups, and multi-layered security to
+                    ensure your data remains private, secure, and accessible.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <a data-bs-toggle="collapse" href="#faq4" class="collapsed"
+                  >Do you provide ongoing support after the project is
+                  completed? <i class="bi bi-chevron-down icon-show"></i
+                  ><i class="bi bi-chevron-up icon-close"></i
+                ></a>
+                <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Yes, we offer continuous support and maintenance plans to
+                    keep your website running smoothly. We also provide 24/7
+                    connectivity and technical assistance as needed.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <a data-bs-toggle="collapse" href="#faq5" class="collapsed"
+                  >How long does it take to complete a project?
+                  <i class="bi bi-chevron-down icon-show"></i
+                  ><i class="bi bi-chevron-up icon-close"></i
+                ></a>
+                <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Project timelines vary depending on the complexity and
+                    features. A basic website may take 1–2 weeks, while larger
+                    or custom projects may take 3–6 weeks or more. We’ll give
+                    you a clear timeline after our initial consultation.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="team" class="team">
+        <div class="container">
+          <div class="section-title">
+            <h2>Our Team</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member">
+                <div class="member-img">
+                  <img src="/ceo.jpg" class="img-fluid" alt="Team Member 1" />
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Walter White</h4>
+                  <span>Chief Executive Officer</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member">
+                <div class="member-img">
+                  <img
+                    src="/product manager.jpg"
+                    class="img-fluid"
+                    alt="Team Member 2"
+                  />
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Sarah Jhonson</h4>
+                  <span>Product Manager</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member">
+                <div class="member-img">
+                  <img src="/cto.jpg" class="img-fluid" alt="Team Member 3" />
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>William Anderson</h4>
+                  <span>CTO</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member">
+                <div class="member-img">
+                  <img
+                    src="/acountant.jpg"
+                    class="img-fluid"
+                    alt="Team Member 4"
+                  />
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Amanda Jepson</h4>
+                  <span>Accountant</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member">
+                <div class="member-img">
+                  <img
+                    src="/marketing.jpg"
+                    class="img-fluid"
+                    alt="Team Member 5"
+                  />
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Michael Brown</h4>
+                  <span>Marketing Lead</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-title">
+            <h2>Contact Us</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="form">
+                <form
+                  action="#"
+                  method="post"
+                  role="form"
+                  class="php-email-form"
+                  id="contactForm"
+                >
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <input
+                        type="text"
+                        name="name"
+                        class="form-control"
+                        id="name"
+                        placeholder="Your Name"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6 form-group mt-3 mt-md-0">
+                      <input
+                        type="email"
+                        class="form-control"
+                        name="email"
+                        id="email"
+                        placeholder="Your Email"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group mt-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="subject"
+                      id="subject"
+                      placeholder="Subject"
+                      required
+                    />
+                  </div>
+                  <div class="form-group mt-3">
+                    <textarea
+                      class="form-control"
+                      name="message"
+                      rows="5"
+                      placeholder="Message"
+                      required
+                    ></textarea>
+                  </div>
+
+                  <div class="text-center">
+                    <button type="submit">Send Message</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="info-box mb-4">
+                <i class="bi bi-geo-alt"></i>
+                <h3>Our Address</h3>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+              <div class="info-box mb-4">
+                <i class="bi bi-envelope"></i>
+                <h3>Email Us</h3>
+                <p>info@example.com</p>
+              </div>
+              <div class="info-box mb-4">
+                <i class="bi bi-phone"></i>
+                <h3>Call Us</h3>
+                <p>+1 5589 55488 55</p>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-lg-12">
+              <div class="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.788510369605!2d-74.0060156845927!3d40.71277519776785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a27e9f6f9a7%3A0x62e1a9c91d31c4e9!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1624567890123!5m2!1sen!2sin"
+                  width="100%"
+                  height="380"
+                  frameborder="0"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-info">
+                <h3>CyberCrest</h3>
+                <p>
+                  A108 Adam Street <br />
+                  New York, NY 535022<br /><br />
+                  <strong>Phone:</strong> +1 5589 55488 55<br />
+                  <strong>Email:</strong> info@example.com<br />
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6">
+              <div class="footer-links">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="about.html">About us</a>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="services.html">Services</a>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="#">Terms of service</a>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="#">Privacy policy</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-links">
+                <h4>Our Services</h4>
+                <ul>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="web_design.html">Web Design</a>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="web_development.html">Web Development</a>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="product_management.html">Product Management</a>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="marketing.html">Marketing</a>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="graphic_design.html">Graphic Design</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="footer-newsletter">
+                <h4>Our Newsletter</h4>
+                <p>Get our news first for up to date</p>
+                <form action="" method="post">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Enter your email"
+                  /><input type="submit" value="Subscribe" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Devin</span></strong
+          >. All Rights Reserved
+        </div>
+      </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>
